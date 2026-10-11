@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        *,html{
+margin:0;
+padding:0;
+box-sizing:border-box;
+        }body{
+            background-color : rgb(24, 22, 20);
+    }main{
+        width: 960px;
+        margin: 0 auto;
+        height: 100px;
+        background-color: rgb(241, 236, 236);
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 100px 80px 400px 300px;
+        gap:10px;
+    text-align: center;}
+    main div{
+        background-color:aquamarine;
+        align-content:center;
+    }#section{
+        display:grid;
+        grid-template-columns:20% 30% 40%;
+        grid-template-rows: 1;
+        grid-template-columns: repeat(3,1fr);
+       column-gap:10px;
+    }#section div{
+        background-color:rgb(236, 230, 230);
+    }
+    </style>
+</head>
+<body>
+ <main> 
+    <div>header</div>
+    <div>nav </div>
+    <div></div>
+    <div id="section"><div>box1</div><div>box2</div><div>box3</div></div>
+    <div>footer</div>
+ </main>   
+</body>
+</html>

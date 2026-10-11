@@ -1,0 +1,332 @@
+/* .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.box{
+    width: 200px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border: 1px solid #000;
+    margin: 10px;
+}
+* {
+    box-sizing: border-box;
+}
+
+.skills {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 20px ;
+}
+.new {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+} */
+/* ---------- BASIC SETTINGS ---------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f8f3ef;
+
+    color: #3f3028;
+}
+
+
+/* ---------- FORM PAGES ---------- */
+
+.form-container {
+
+    width: 450px;
+
+    max-width: 90%;
+
+    margin: 50px auto;
+
+    padding: 35px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+
+    text-align: center;
+
+    color: #704c3a;
+
+    margin-bottom: 8px;
+}
+
+.subtitle {
+
+    text-align: center;
+
+    color: #806f64;
+
+    margin-bottom: 25px;
+}
+
+
+/* ---------- LABELS ---------- */
+
+form > label {
+
+    display: block;
+
+    margin-top: 15px;
+
+    margin-bottom: 6px;
+
+    font-weight: bold;
+}
+
+
+/* ---------- INPUTS ---------- */
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="file"] {
+
+    width: 100%;
+
+    padding: 11px;
+
+    border: 1px solid #cdbfb7;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+}
+
+input:focus {
+
+    outline: none;
+
+    border-color: #9a6b52;
+}
+
+
+/* ---------- RADIO + CHECKBOX ---------- */
+
+.options {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-top: 8px;
+}
+
+.options label {
+
+    font-weight: normal;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+}
+
+
+/* ---------- BUTTON ---------- */
+
+button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #704c3a;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+button:hover {
+
+    background-color: #93664d;
+}
+
+
+/* ---------- BOTTOM TEXT ---------- */
+
+.bottom-text {
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #806f64;
+}
+
+.bottom-text a {
+
+    color: #704c3a;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+/* ---------- NAVBAR ---------- */
+
+.navbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 7%;
+
+    background-color: white;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #704c3a;
+}
+
+.nav-links {
+
+    display: flex;
+
+    gap: 25px;
+}
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: #4d3b32;
+
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+
+    color: #9a6b52;
+}
+
+
+/* ---------- ABOUT PAGE ---------- */
+
+.about-container {
+
+    width: 80%;
+
+    max-width: 900px;
+
+    margin: 40px auto;
+}
+
+
+/* EACH DIV IS A SEPARATE AREA */
+
+.about-section {
+
+    background-color: white;
+
+    padding: 30px;
+
+    margin-bottom: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.about-section h1,
+.about-section h2 {
+
+    color: #704c3a;
+
+    margin-bottom: 15px;
+}
+
+.about-section p {
+
+    line-height: 1.7;
+
+    color: #5f514a;
+}
+
+
+/* ---------- IMAGE ---------- */
+
+.image-section {
+
+    text-align: center;
+}
+
+figure img {
+
+    width: 220px;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 4px solid #eaded4;
+}
+
+figcaption {
+
+    margin-top: 10px;
+
+    color: #806f64;
+
+    font-style: italic;
+}
+
+
+/* ---------- LIST ---------- */
+
+.about-section ul {
+
+    margin-left: 25px;
+
+    margin-top: 10px;
+
+    line-height: 2;
+}

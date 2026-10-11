@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+*,html{
+    margin:0;
+    padding:0;
+}
+#box{
+    width:600px;
+    height: 900px;
+    background-color: rgb(192, 170, 149);
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}</style>
+</head>
+<body>
+    <div id="box">
+<form>
+    <div>
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" placeholder="enter your name">
+    </div>
+    <div>
+        <label for="email">Your email</label>
+        <input type="email" id="email" name="email" placeholder="enter your email">
+    </div>
+    <div>
+        <label for="phone">Your phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="enter your phone">
+    </div>
+    <div>
+        <label for="dob">Your date of birth</label>
+        <input type="date" id="dob" name="dob" placeholder="enter your dob">
+    </div>
+    <div>
+        <label for="course">Your course</label>
+        <input type="checkbox" id="python" name="course" value="python">
+        <label for="python">Python</label>
+        <input type="checkbox" id="java" name="course" value="java">
+        <label for="java">Java</label>
+    </div>
+    <div>
+        <label for="country">Your country</label>
+        <select id="country" name="country">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+        </select>
+    </div>
+</form>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }ul{
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(24, 22, 20);
+        }ul li{
+margin: 10px;
+        }ul li a{
+            color: white;
+            text-decoration: none;
+            font-family : 'Courier New', Courier, monospace;
+            font-size: 20px;
+            
+        }ul li a:hover{
+            color: rgb(199, 212, 101);
+            text-decoration: underline;
+            text-shadow: 2px 2px 4px #000000;
+        }#apply-now a{
+            background-color: #eef881;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: underline;
+        }#apply-now a:hover{
+            background-color: #45a049;
+        }.active{
+            color: rgb(199, 212, 101);
+            text-decoration: underline;
+            text-shadow: 2px 2px 4px #000000;
+        }
+    </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#"class="active">Home</a></li>
+      <li><a href="list.html " target="_blank">About</a></li>
+      <li><a href="websitedemo.html" target="_blank">Services</a></li>
+      <li id="apply-now"><a href="apply.html" target="_blank">Apply Now</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

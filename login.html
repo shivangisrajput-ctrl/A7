@@ -1,0 +1,137 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+
+    <h2 align="center">Login Window</h2>
+
+    <form>
+
+        <label>Username:</label>
+        <input type="text"
+               name="username"
+               minlength="4"
+               maxlength="15"
+               placeholder="Enter username"
+               required>
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password"
+               name="password"
+               minlength="8"
+               maxlength="20"
+               placeholder="Enter password"
+               title="Password must contain minimum 8 characters and maximum 20 characters"
+               required>
+        <br><br>
+
+        <input type="submit" value="Login">
+
+    </form>
+
+</div>
+
+
+<hr>
+
+
+
+
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login</title>
+
+    <link rel="stylesheet" href="flex.css">
+
+</head>
+
+
+<body>
+
+    <div class="form-container login-box">
+
+        <h1>Welcome Back</h1>
+
+        <p class="subtitle">
+            Login to continue
+        </p>
+
+
+        <form action="about.html">
+
+            <!-- USERNAME -->
+
+            <label for="username">
+                Username
+            </label>
+
+            <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter username"
+                minlength="4"
+                maxlength="20"
+                title="Username must contain 4 to 20 characters"
+                required
+            >
+
+
+            <!-- PASSWORD -->
+
+            <label for="login-password">
+                Password
+            </label>
+
+            <input
+                type="password"
+                id="login-password"
+                name="password"
+                placeholder="Enter password"
+                minlength="8"
+                maxlength="16"
+                title="Password must contain 8 to 16 characters"
+                required
+            >
+
+
+            <!-- LOGIN BUTTON -->
+
+            <button type="submit">
+                Login
+            </button>
+
+        </form>
+
+
+        <p class="bottom-text">
+
+            Don't have an account?
+
+            <a href="registration.html">
+                Register here
+            </a>
+
+        </p>
+
+    </div>
+
+</body>
+
+</html>

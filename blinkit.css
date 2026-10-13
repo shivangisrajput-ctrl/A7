@@ -1,0 +1,526 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #222;
+}
+
+
+/* Navbar */
+
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 15px 40px;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #f7c600;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.08);
+}
+
+.location {
+    font-size: 15px;
+    min-width: 170px;
+}
+
+.location span {
+    font-size: 12px;
+    color: #777;
+}
+
+.search {
+    flex: 1;
+    background-color: #f3f3f3;
+    padding: 12px 18px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.search:focus-within {
+    background-color: #eeeeee;
+    box-shadow: 0 0 5px #ddd;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 90%;
+    font-size: 15px;
+}
+
+.login {
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login:hover {
+    color: #f7b900;
+}
+
+.cart {
+    background-color: #f7c600;
+    border: none;
+    padding: 13px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cart:hover {
+    background-color: #e5b600;
+    transform: scale(1.05);
+}
+
+
+/* Banner */
+
+.banner {
+    margin: 30px 40px;
+    padding: 40px;
+    background-color: #fff3b0;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.banner img {
+    width: 180px;
+    transition: 0.4s;
+}
+
+.banner img:hover {
+    transform: scale(1.08);
+}
+
+.shop {
+    background-color: #f7c600;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.shop:hover {
+    background-color: #e5b600;
+    transform: translateY(-3px);
+}
+
+
+/* Categories */
+
+.categories {
+    padding: 20px 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.category-container {
+    display: flex;
+    gap: 25px;
+}
+
+.category {
+    width: 150px;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 12px #ddd;
+}
+
+.category img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.category:hover img {
+    transform: scale(1.1);
+}
+
+.category p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+/* Products */
+
+.products {
+    padding: 40px;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 15px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 15px #ddd;
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.product-card:hover img {
+    transform: scale(1.03);
+}
+
+.product-card h3 {
+    margin-top: 12px;
+}
+
+.quantity {
+    color: #777;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.add {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    background-color: white;
+    color: green;
+    border: 1px solid green;
+    padding: 7px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add:hover {
+    background-color: green;
+    color: white;
+    transform: scale(1.05);
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 40px;
+    padding: 30px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.footer-logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f7c600;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 8px;
+    color: #666;
+}
+
+
+/* LOGIN BUTTON */
+
+.login {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login:hover {
+    color: #f7c600;
+}
+
+
+/* LOGIN BOX */
+
+.login-box {
+    display: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 100;
+}
+
+
+/* Show login box when Login is clicked */
+
+.login-box:target {
+    display: flex;
+}
+
+
+.login-content {
+    width: 350px;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px #555;
+
+    position: relative;
+}
+
+
+.login-content h2 {
+    margin-bottom: 8px;
+}
+
+.login-content > p {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+
+/* CLOSE BUTTON */
+
+.close-login {
+    position: absolute;
+
+    right: 20px;
+    top: 15px;
+
+    font-size: 28px;
+
+    text-decoration: none;
+
+    color: #555;
+}
+
+.close-login:hover {
+    color: red;
+}
+
+
+/* FORM */
+
+.login-content label {
+    display: block;
+
+    margin-top: 15px;
+    margin-bottom: 6px;
+
+    font-weight: bold;
+}
+
+.login-content input {
+    width: 100%;
+
+    padding: 11px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 7px;
+
+    outline: none;
+}
+
+.login-content input:focus {
+    border-color: #f7c600;
+}
+
+
+/* PASSWORD AREA */
+
+.password-area {
+    position: relative;
+}
+
+.password-area input {
+    width: 100%;
+}
+
+
+/* TOOLTIP */
+
+.tooltip {
+    position: absolute;
+
+    right: 10px;
+    top: 10px;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: #555;
+
+    color: white;
+
+    border-radius: 50%;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+
+/* Tooltip text */
+
+.tooltip-text {
+    visibility: hidden;
+
+    width: 210px;
+
+    background-color: #333;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 8px;
+
+    border-radius: 6px;
+
+    position: absolute;
+
+    right: 25px;
+    bottom: 25px;
+
+    font-size: 12px;
+
+    opacity: 0;
+
+    transition: 0.3s;
+}
+
+
+/* Show tooltip on hover */
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+
+    opacity: 1;
+}
+
+
+/* LOGIN SUBMIT */
+
+.login-submit {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #f7c600;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.login-submit:hover {
+    background-color: #e5b600;
+
+    transform: translateY(-2px);
+}
+
+
+.signup {
+    text-align: center;
+
+    margin-top: 18px;
+
+    font-size: 13px;
+}
+
+.signup a {
+    color: #d69f00;
+}
+.product-card {
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px #ddd;
+}
+.add:hover {
+    background-color: green;
+    color: white;
+}
